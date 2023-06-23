@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lex Monteverde - Links</title>
+  <script src="https://kit.fontawesome.com/6ad2795456.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <img src="assets/img/biopic.jpg" alt="melldy monteverde" class="bio-img" />
+      <h1 class="header-title">@lexmonteverde</h1>
+    </header>
+    <ul>
+      <li class="li-links">
+        <a href="https://github.com/Melldy-Monteverde/" class="links" target="_blank"><span
+            class="fab fa-github"></span> GitHub</a>
+      </li>
+      <li class="li-links">
+        <a href="https://www.linkedin.com/in/melldy-monteverde-b19390190/" class="links" target="_blank"><span
+            class="fab fa-linkedin"></span> LinkedIn</a>
+      </li>
+      <li class="li-links">
+        <a href="#" id="btn-portfolio" class="links"><span class="fas fa-code"></span> Portfolio</a>
+      </li>
+      <li class="li-links">
+        <a href="mailto:lexmonteverde@gmail.com" class="links"><span class="fas fa-paper-plane"></span> E-mail</a>
+      </li>
+    </ul>
+  </main>
+
+  <form method="POST" enctype="multipart/form-data" class="contact-form row g-3 mx-5 needs-validation" id="form-id"
+    novalidate>
+    <legend class="text-center">Contacto</legend>
+
+    <div class="form-input col-12 col-sm-6">
+      <input class="form-control rounded-pill" type="text" name="name" placeholder="Nombre *"
+        title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" autocomplete="off"
+        required />
+      <div class="invalid-feedback">
+        <i class="fas fa-times"></i> Solo acepta letras y espacios
+      </div>
+    </div>
+
+    <div class="form-input col-12 col-sm-6">
+      <input class="form-control rounded-pill" type="text" type="email" name="email" placeholder="correo@example.com *"
+        title="Formato incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+        autocomplete="off" required />
+      <div class="invalid-feedback">
+        <i class="fas fa-times"></i> Formato invalido
+      </div>
+    </div>
+
+    <div class="form-input">
+      <textarea class="form-control" name="comentario" cols="50" rows="5" placeholder="Dejame tu consulta *"
+        title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" autocomplete="off"
+        required></textarea>
+      <div class="invalid-feedback">
+        <i class="fas fa-times"></i> Mensaje requerido
+      </div>
+    </div>
+
+    <!-- form config -->
+    <input type="hidden" name="_next" value="https://lmdevelopment.netlify.app/" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_subject" value="Consulta desde biolinks" />
+    <input type="hidden" name="_captcha" value="false" />
+
+    <button type="submit" value="Enviar"
+      class="btn btn-secondary rounded-pill text-center mt-3 mb-5 col-md-4 position-relative top-50 start-50 translate-middle-x">
+      Enviar
+    </button>
+  </form>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
