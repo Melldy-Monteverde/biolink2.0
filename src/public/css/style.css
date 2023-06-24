@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Prosto One", cursive, sans-serif;
-  background: url(../assets/img/bg.jpg) repeat center center fixed;
+  background: url(../statics/bg.jpg) repeat center center fixed;
   background-size: cover;
   color: #fff;
 }

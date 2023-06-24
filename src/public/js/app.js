@@ -1,8 +1,10 @@
+console.log('hello there')
+
 function portfolioError() {
   let btnPorfotlio = document.getElementById("btn-portfolio");
 
   btnPorfotlio.addEventListener("click", () => {
-    Swal.fire("Hola!", "Disculpa, sigo trabjando en esta sección!", "info");
+    Swal.fire("Hi!", "Sorry, still working in this section!", "info");
   });
 }
 

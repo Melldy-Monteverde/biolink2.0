@@ -15,7 +15,7 @@
 <body>
   <main>
     <header class="header">
-      <img src="assets/img/biopic.jpg" alt="melldy monteverde" class="bio-img" />
+      <img src="./statics/biopic.jpg" alt="melldy monteverde" class="bio-img" />
       <h1 class="header-title">@lexmonteverde</h1>
     </header>
     <ul>
@@ -36,16 +36,15 @@
     </ul>
   </main>
 
-  <form method="POST" enctype="multipart/form-data" class="contact-form row g-3 mx-5 needs-validation" id="form-id"
-    novalidate>
-    <legend class="text-center">Contacto</legend>
+  <form action="/contact" method="POST" class="contact-form row g-3 mx-5 needs-validation" id="form-id">
+    <legend class="text-center">Contact</legend>
 
     <div class="form-input col-12 col-sm-6">
       <input class="form-control rounded-pill" type="text" name="name" placeholder="Nombre *"
         title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" autocomplete="off"
-        required />
+        required autofocus />
       <div class="invalid-feedback">
-        <i class="fas fa-times"></i> Solo acepta letras y espacios
+        <i class="fas fa-times"></i> Only letters and spaces
       </div>
     </div>
 
@@ -54,24 +53,18 @@
         title="Formato incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
         autocomplete="off" required />
       <div class="invalid-feedback">
-        <i class="fas fa-times"></i> Formato invalido
+        <i class="fas fa-times"></i> Invalid format
       </div>
     </div>
 
     <div class="form-input">
-      <textarea class="form-control" name="comentario" cols="50" rows="5" placeholder="Dejame tu consulta *"
+      <textarea class="form-control" name="comment" cols="50" rows="5" placeholder="Dejame tu consulta *"
         title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" autocomplete="off"
         required></textarea>
       <div class="invalid-feedback">
-        <i class="fas fa-times"></i> Mensaje requerido
+        <i class="fas fa-times"></i> Message is required
       </div>
     </div>
-
-    <!-- form config -->
-    <input type="hidden" name="_next" value="https://lmdevelopment.netlify.app/" />
-    <input type="hidden" name="_template" value="table" />
-    <input type="hidden" name="_subject" value="Consulta desde biolinks" />
-    <input type="hidden" name="_captcha" value="false" />
 
     <button type="submit" value="Enviar"
       class="btn btn-secondary rounded-pill text-center mt-3 mb-5 col-md-4 position-relative top-50 start-50 translate-middle-x">
