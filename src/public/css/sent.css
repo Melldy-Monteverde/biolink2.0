@@ -13,6 +13,22 @@ body {
   background: url(../statics/bg.jpg) repeat center center fixed;
   background-size: cover;
   color: #fff;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+body .icon {
+  font-size: 3rem;
+}
+
+a {
+  color: #d65e0e;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 header {
@@ -77,56 +93,4 @@ ul > li > a {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-}
-
-form legend {
-  border-bottom: 3px solid #d55d0e;
-}
-
-form div.invalid-feedback {
-  background: #fffa;
-  backdrop-filter: blur(10px) saturate(160%) contrast(180%);
-  -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
-  border-radius: 5px;
-  padding: 3px 5px;
-  margin: 2px 0;
-  max-width: auto;
-  box-shadow: rgba(28, 32, 93 / 24%) 0 2px 8px 0;
-}
-
-.btn {
-  background-image: linear-gradient(
-    45deg,
-    #ff512f 0%,
-    #f09819 51%,
-    #ff512f 100%
-  );
-}
-
-.btn {
-  max-width: 250px;
-  text-transform: uppercase;
-  transition: 0.5s ease-in-out;
-  background-size: 200% auto;
-  border: none;
-  color: white;
-  font-weight: 700;
-}
-
-.btn:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn:active {
-  transform: scale(0.95);
-}
-
-div.hidden {
-  display: none;
-}
-
-div.visible {
-  display: block;
 }

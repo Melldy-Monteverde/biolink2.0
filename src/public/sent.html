@@ -9,7 +9,7 @@
   <script src="https://kit.fontawesome.com/6ad2795456.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sent.css" />
 </head>
 
 <body>
@@ -33,41 +33,11 @@
     </ul>
   </main>
 
-  <form action="/contact" method="POST" class="contact-form row g-3 mx-5 needs-validation" id="form-id" novalidate>
-    <legend class="text-center">Contact</legend>
-
-    <div class="form-input col-12 col-sm-6">
-      <input class="form-control " type="text" name="name" placeholder="Name *" title="Only letters and spaces"
-        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" autocomplete="off" required autofocus />
-      <div class="invalid-feedback">
-        <i class="fas fa-times"></i> Only letters and spaces
-      </div>
-    </div>
-
-    <div class="form-input col-12 col-sm-6">
-      <input class="form-control" type="text" type="email" name="email" placeholder="mail@example.com *"
-        title="Invalid format" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-        autocomplete="off" required />
-      <div class="invalid-feedback">
-        <i class="fas fa-times"></i> Invalid format
-      </div>
-    </div>
-
-    <div class="form-input">
-      <textarea class="form-control" name="comment" cols="50" rows="3" placeholder="Message *"
-        title="Your message cannot be longer than 255 characters" data-pattern="^.{1,255}$" autocomplete="off"
-        required></textarea>
-      <div class="invalid-feedback">
-        <i class="fas fa-times"></i> Message is required
-      </div>
-    </div>
-
-    <button type="submit" value="Send"
-      class="btn btn-secondary rounded-pill text-center mt-3 mb-5 col-md-4 position-relative top-50 start-50 translate-middle-x"
-      id="btnSend">
-      Send
-    </button>
-  </form>
+  <div class="container-fluid text-center">
+    <i class="fa fa-paper-plane icon mb-3"></i>
+    <h1>Message Delivered!!!</h1>
+    <a href="./index.html">New message</a>
+  </div>
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
