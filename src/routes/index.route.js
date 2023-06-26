@@ -30,10 +30,10 @@ router.post('/contact', (req, res) => {
 
   const sendMail = async () => {
     // INFO: descoment for mailtrap
-    const transporter = createTransportMailtrap()
+    // const transporter = createTransportMailtrap()
 
     // INFO: descoment for google
-    // const transporter = createTransportGmail()
+    const transporter = createTransportGmail()
 
     // INFO: descoment for sendgrid api
     // const transporter = createTransportSendgrid()
