@@ -13,7 +13,7 @@ router.post('/contact', (req, res) => {
   let message = {
     from: `${name} ${email}`,
     to: process.env.EMAIL_TO,
-    // cc: email,
+    cc: email,
     subject: 'New message from the web!',
     html: `
         <h1>Hello there</h1>

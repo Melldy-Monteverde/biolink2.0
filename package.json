@@ -1,6 +1,6 @@
 {
   "name": "mailer2.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,12 @@
     "dev": "nodemon ./src/index.js",
     "start": "node ./src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "nodemailer",
+    "express"
+  ],
+  "author": "Melldy Monteverde",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
